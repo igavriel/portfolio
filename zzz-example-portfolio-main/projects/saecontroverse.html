@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAE - Controverse</title>
+  <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/media.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+          integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../css/projects.css" />
+</head>
+
+<body>
+<!-- Header -->
+<header id="header" class="header">
+  <div class="container container-lg">
+    <div class="header-nav">
+      <a href="../index.html" class="logo">R<span>.</span>Lambert</a>
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html#home" class="nav-link" data-translate="home">Home</a></li>
+          <li class="nav-item"><a href="../index.html#about" class="nav-link" data-translate="about">About</a></li>
+          <li class="nav-item">
+            <a href="../index.html#projects" class="nav-link active" data-translate="projects">Projects</a>
+            <ul class="dropdown">
+              <li><a href="saectf.html" class="dropdown-item">CTFD</a></li>
+              <li><a href="saetrains.html" class="dropdown-item">SAE - Trains </a></li>
+              <li><a href="saebd.html" class="dropdown-item">SAE - BD Streaming Musical</a></li>
+              <li><a href="saemagasin.html" class="dropdown-item">Plateforme E-commerce</a></li>
+              <li><a href="saecontroverse.html" class="dropdown-item">SAE - Controverse</a></li>
+              <li><a href="saetournoi.html" class="dropdown-item">SAE - Charlie's festival adventure</a></li>
+              <li><a href="stagedsin.html" class="dropdown-item">Stage DSIN - SA.P.I.E.N.S</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a href="../index.html#contact" class="nav-link" data-translate="contact">Contact</a></li>
+          <li class="nav-item">
+            <select id="languageSelect" class="language-select">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+            </select>
+          </li>
+        </ul>
+        <button id="nav-btn" class="nav-btn">
+          <img id="nav-btn-img" src="../img/icons/open.svg" alt="Navigation button"/>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Project Content -->
+<section class="hero" style="padding: 12rem 0 5rem;">
+  <div class="container">
+    <div class="projects-title">
+      <h2 class="title" data-translate="project_viesafe">SAE - Controversee</h2>
+    </div>
+    <div class="about-row">
+      <!-- Navigation des sections -->
+      <div class="about-content" style="flex: 25%;">
+        <div class="section-nav">
+          <ul>
+            <li><a href="#contexte" data-translate="project_context">Contexte</a></li>
+            <li><a href="#deroulement" data-translate="project_progress">Déroulement du projet</a></li>
+            <li><a href="#defis" data-translate="technical_challenges">Défis techniques</a></li>
+            <li><a href="#competences" data-translate="skills_acquired">Compétences acquises</a></li>
+            <li><a href="#conclusion" data-translate="conclusion">Conclusion</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="about-skills" style="flex: 75%; min-width: 0;">
+        <!-- Contexte -->
+        <div id="contexte" class="project-section">
+          <h3 data-translate="project_context">Contexte</h3>
+          <p class="about-descr" data-translate="context_text_p1">
+            Dans le cadre d'une réflexion approfondie sur les enjeux contemporains de la société numérique, notre équipe a été chargée de développer une plateforme web explorant la question fondamentale : "Faut-il limiter notre droit à la vie privée pour garantir notre sécurité nationale ?" Ce projet visait à créer un espace de discussion et d'information autour de cette problématique cruciale.
+          </p>
+          <p class="about-descr" style="margin-top: 2rem;" data-translate="context_text_p2">
+            L'objectif était de concevoir un site web complet offrant une analyse approfondie de cette question sous différents angles, tout en maintenant une approche accessible et engageante pour les visiteurs.
+          </p>
+        </div>
+
+        <!-- Déroulement -->
+        <div id="deroulement" class="project-section">
+          <h3 data-translate="project_progress">Déroulement du projet</h3>
+          <p class="about-descr" data-translate="project_progress_p1">
+            Le développement s'est structuré autour de la création de cinq sections principales : une page d'accueil présentant la problématique, une analyse PESTEL détaillée, une section podcast pour une approche plus dynamique, une bibliographie exhaustive, et un espace contact pour l'interaction avec les visiteurs.
+          </p>
+          <p class="about-descr" style="margin-top: 2rem;" data-translate="project_progress_p2">
+            L'approche adoptée a privilégié une méthodologie progressive, partant d'une structure fondamentale pour enrichir graduellement le contenu et l'expérience utilisateur. Chaque section a été développée en tenant compte des besoins spécifiques des utilisateurs et de l'importance d'une navigation intuitive.
+          </p>
+        </div>
+
+        <!-- Défis -->
+        <div id="defis" class="project-section">
+          <h3 data-translate="challenges_title">Défis techniques</h3>
+          <p class="about-descr" data-translate="challenges_intro">
+            Le projet a présenté plusieurs défis techniques majeurs qu'il a fallu surmonter :
+          </p>
+          <ul class="challenge-list">
+            <li><strong data-translate="challenges_responsive_title">Interface responsive</strong>
+              <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li data-translate="challenges_responsive_1">Adaptation de l'interface aux différents supports de consultation</li>
+                <li data-translate="challenges_responsive_2">Optimisation de la navigation pour les appareils mobiles</li>
+              </ul>
+            </li>
+            <li>
+              <strong data-translate="challenges_multimedia_title">Intégration multimédia</strong>
+              <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li data-translate="challenges_multimedia">Intégration harmonieuse des éléments multimédias, notamment le podcast et les ressources visuelles</li>
+              </ul>
+            </li>
+            <li>
+              <strong data-translate="challenges_navigation_title">Navigation</strong>
+              <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li data-translate="challenges_navigation">Mise en place d'une navigation fluide entre les différentes sections bibliographiques et implémentation d'un menu burger pour l'ergonomie mobile</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Compétences -->
+        <div id="competences" class="project-section">
+          <h3 data-translate="skills_acquired">Compétences acquises</h3>
+          <p class="about-descr" data-translate="skills_text_p1">
+            Ce projet m'a permis de développer et consolider plusieurs compétences essentielles en développement web : maîtrise approfondie du HTML5 et du CSS3, implémentation de JavaScript pour les interactions dynamiques, et conception d'interfaces responsives.
+          </p>
+          <p class="about-descr" style="margin-top: 2rem;" data-translate="skills_text_p2">
+            J'ai également acquis une expérience précieuse dans l'organisation et la présentation structurée d'un contenu académique complexe, ainsi que dans la gestion de l'architecture de l'information pour une navigation intuitive.
+          </p>
+        </div>
+
+        <!-- Conclusion -->
+        <div id="conclusion" class="project-section">
+          <h3 data-translate="conclusion">Conclusion</h3>
+          <p class="about-descr" data-translate="conclusion_text">
+            Ce projet représente une synthèse réussie entre rigueur académique et accessibilité numérique. Il démontre la capacité à transformer une problématique sociétale complexe en une expérience web cohérente et engageante. Au-delà des aspects techniques, il illustre l'importance d'une réflexion approfondie sur la structuration de l'information et l'expérience utilisateur dans le contexte d'enjeux contemporains majeurs.
+          </p>
+          <a href="https://github.com/Raphlbrt/SAE-Controverse" target="_blank" class="btn">
+            <img src="../img/social_icons/github.svg" alt="GitHub" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+            <span data-translate="see_on_github">Voir sur GitHub</span>
+          </a>
+          <a href="https://raphlbrt.github.io/SAE-Controverse/" class="btn btn-white" data-translate="link_to_project">Lien vers le projet</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation entre projets -->
+    <div style="display: flex; justify-content: space-between; margin-top: 6rem;">
+      <a href="saemagasin.html" class="btn btn-white" data-translate="previous_project">← Projet Précédent</a>
+      <a href="saetournoi.html" class="btn btn-white" data-translate="next_project">Projet Suivant →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="social-links-row footer-social">
+        <a href="https://github.com/Raphlbrt" target="_blank">
+          <img src="../img/social_icons/github.svg" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/raphael-lambert/" target="_blank">
+          <img src="../img/social_icons/linkedin.svg" alt="LinkedIn"/>
+        </a>
+        <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/lambertr" target="_blank">
+          <img src="../img/social_icons/gitlab.png" alt="GitLab"/>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Copyright Raphaël Lambert 2024 | Designed by Raphaël Lambert</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="goToTop" class="goToTop">
+  <a href="#!">
+    <img src="../img/icons/arrow_up.svg" alt="Back to top"/>
+  </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/translationcontroverse.js"></script>
+</body>
+</html>

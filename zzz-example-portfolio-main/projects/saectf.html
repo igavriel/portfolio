@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet CTFD - Raphaël Lambert</title>
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+            integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/projects.css" />
+</head>
+
+<body>
+<!-- Header -->
+<header id="header" class="header">
+    <div class="container container-lg">
+        <div class="header-nav">
+            <a href="../index.html" class="logo">R<span>.</span>Lambert</a>
+            <nav id="nav" class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html#home" class="nav-link" data-translate="home">Home</a></li>
+                    <li class="nav-item"><a href="../index.html#about" class="nav-link" data-translate="about">About</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html#projects" class="nav-link active" data-translate="projects">Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="saectf.html" class="dropdown-item">CTFD</a></li>
+                            <li><a href="saetrains.html" class="dropdown-item">SAE - Trains </a></li>
+                            <li><a href="saebd.html" class="dropdown-item">SAE - BD Streaming Musical</a></li>
+                            <li><a href="saemagasin.html" class="dropdown-item">Plateforme E-commerce</a></li>
+                            <li><a href="saecontroverse.html" class="dropdown-item">SAE - Controverse</a></li>
+                            <li><a href="saetournoi.html" class="dropdown-item">SAE - Charlie's festival adventure</a></li>
+                            <li><a href="stagedsin.html" class="dropdown-item">Stage DSIN - SA.P.I.E.N.S</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a href="../index.html#contact" class="nav-link" data-translate="contact">Contact</a></li>
+                    <li class="nav-item">
+                        <select id="languageSelect" class="language-select">
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </li>
+                </ul>
+                <button id="nav-btn" class="nav-btn">
+                    <img id="nav-btn-img" src="../img/icons/open.svg" alt="Navigation button"/>
+                </button>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Project Content -->
+<section class="hero" style="padding: 12rem 0 5rem;">
+    <div class="container">
+        <div class="projects-title">
+            <h2 class="title" data-translate="project_ctfd">Projet CTFD</h2>
+        </div>
+        <div class="about-row">
+            <!-- Navigation des sections -->
+            <div class="about-content" style="flex: 25%;">
+                <div class="section-nav">
+                    <ul>
+                        <li><a href="#contexte" data-translate="project_context">Contexte</a></li>
+                        <li><a href="#deroulement" data-translate="project_progress">Déroulement du projet</a></li>
+                        <li><a href="#defis" data-translate="technical_challenges">Défis techniques</a></li>
+                        <li><a href="#competences" data-translate="skills_acquired">Compétences acquises</a></li>
+                        <li><a href="#conclusion" data-translate="conclusion">Conclusion</a></li>
+                    </ul>
+
+                    </div>
+                </div>
+
+            <!-- Contenu principal -->
+            <div class="about-skills" style="flex: 75%; min-width: 0;">
+                <!-- Contexte -->
+                <div id="contexte" class="project-section">
+                    <h3 data-translate="project_context">Contexte</h3>
+                    <p class="about-descr" data-translate="context_text_p1">
+                        L'association Yggame, active dans l'organisation d'événements, souhaitait étendre ses activités avec un événement dédié à la cybersécurité. Cet événement, un Capture The Flag (CTF), visait à proposer une série de défis techniques permettant aux participants de tester et d'approfondir leurs compétences en sécurité informatique. Notre équipe de quatre étudiants avait pour mission de concevoir une plateforme complète pour gérer cet événement et d'élaborer une série de défis variés et stimulants.
+                    </p>
+                    <p class="about-descr" style="margin-top: 2rem;" data-translate="context_text_p2">
+                        En tant que Product Owner, j'étais chargé de m'assurer que les attentes du client étaient bien comprises et intégrées dans le développement du projet. Mon rôle consistait à coordonner l'équipe, prioriser les tâches, et garantir que les livrables répondaient aux besoins fonctionnels et techniques de l'association.
+                    </p>
+                </div>
+
+                <!-- Déroulement -->
+                <div id="deroulement" class="project-section">
+                    <h3 data-translate="project_progress">Déroulement du projet</h3>
+                    <p class="about-descr" data-translate="project_progress_p1">
+                        Pour répondre aux besoins de l'association, nous avons choisi d'utiliser la plateforme CTFd, une solution open-source conçue pour les événements CTF. Cette plateforme a été personnalisée en fonction des attentes spécifiques du client et déployée sur un serveur VPS en utilisant une infrastructure basée sur Docker. Cette conteneurisation nous a permis de créer un environnement modulaire et flexible, où chaque défi nécessitant un hébergement pouvait être isolé dans son propre conteneur. J'ai également développé une interface pour gérer ces conteneurs de manière intuitive.
+                    </p>
+                    <p class="about-descr" style="margin-top: 2rem;" data-translate="project_progress_p2">
+                        La gestion des défis s'appuyait sur une base de données MySQL, associée à l'outil phpMyAdmin pour une administration simplifiée. En parallèle, nous avons travaillé en méthode agile, organisant nos tâches et nos sprints via GitLab, qui a servi à la fois de plateforme de gestion de projet et de versionnement.
+                    </p>
+                </div>
+
+                <!-- Défis -->
+                <div id="defis" class="project-section">
+                    <h3 data-translate="challenges_title">Création des défis techniques</h3>
+                    <p class="about-descr" data-translate="challenges_intro">
+                        Une part essentielle du projet consistait à développer des défis variés, couvrant plusieurs domaines de la cybersécurité, pour enrichir l'expérience des participants. Parmi ceux que j'ai réalisés :
+                    </p>
+                    <ul class="challenge-list">
+                        <li><strong data-translate="challenges_php_title">Défis PHP</strong>
+                            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                                <li data-translate="challenges_php_1">Un exercice sur les injections SQL pour sensibiliser aux risques liés aux requêtes non sécurisées.</li>
+                                <li data-translate="challenges_php_2">Un défi explorant la sécurité des cookies, avec manipulation et contournement d'un mécanisme d'authentification en PHP.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong data-translate="title_rgpd">Questionnaire RGPD</strong>
+                            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                                <li data-translate="challenges_rgpd"> Un défi interactif basé sur un faux texte de politique de confidentialité, où des scripts JavaScript empêchent la copie du texte ou l'accès à l'inspecteur d'élément.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong data-translate="title_drupal">CMS Drupal</strong>
+                            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                                <li data-translate="challenges_drupal">Un défi exploitant une API JSON exposée pour chercher des informations dans une page de type article, sans authentification.</li>
+                            </ul>
+                        <li><strong data-translate="challenges_stego_title">Stéganographie</strong>
+                            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                                <li data-translate="challenges_stego_1">Un défi utilisant les métadonnées d'une image pour dissimuler des informations d'identification.</li>
+                                <li data-translate="challenges_stego_2">Un défi avancé de manipulation de chunks PNG avec des données compressées en format zTXT.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Compétences -->
+                <div id="competences" class="project-section">
+                    <h3 data-translate="skills_acquired">Compétences et Apprentissages</h3>
+                    <p class="about-descr" data-translate="skills_text_p1">
+                        Ce projet m'a permis d'approfondir mes connaissances techniques, notamment en gestion d'infrastructure avec Docker et en déploiement de solutions sur un serveur VPS. J'ai également acquis une expérience pratique dans le développement et l'intégration de défis en cybersécurité, en explorant des domaines variés comme la sécurité web, les bases de données, et les systèmes.
+                    </p>
+                    <p class="about-descr" style="margin-top: 2rem;" data-translate="skills_text_p2">
+                        En tant que Product Owner, j'ai appris à traduire les besoins d'un client en spécifications claires et réalisables. Cette expérience m'a également permis de perfectionner mes compétences en gestion d'équipe et en communication, en m'appuyant sur des outils comme GitLab pour structurer et suivre les progrès du projet.
+                    </p>
+                </div>
+
+                <!-- Conclusion -->
+                <div id="conclusion" class="project-section">
+                    <h3 data-translate="conclusion">Conclusion</h3>
+                    <p class="about-descr" data-translate="conclusion_text">
+                        Ce projet a été une expérience formatrice qui m'a permis de travailler sur une application concrète et utile, tout en répondant aux besoins d'un véritable client. Les retours positifs de l'association Yggame ont validé nos choix techniques et organisationnels, et cette réussite a renforcé ma motivation à poursuivre mes efforts dans le domaine de la cybersécurité et du développement de solutions adaptées aux problématiques réelles.
+                    </p>
+                    <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/sae-iamsi-groupe-6/break-the-code" target="_blank" class="btn">
+                        <img src="../img/social_icons/gitlab.png" alt="GitLab" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+                        <span data-translate="see_on_gitlab">Voir sur GitLab</span>
+                    </a>
+                    <a href="https://ctf-eq6.yggame.fr/" class="btn btn-white" data-translate="link_to_project">Link to the project</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Navigation entre projets -->
+        <div style="display: flex; justify-content: space-between; margin-top: 6rem;">
+            <a href="stagedsin.html" class="btn btn-white" data-translate="previous_project">← Projet Précédent</a>
+            <a href="saetrains.html" class="btn btn-white" data-translate="next_project">Projet Suivant →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="social-links-row footer-social">
+                <a href="https://github.com/Raphlbrt" target="_blank">
+                    <img src="../img/social_icons/github.svg" alt="GitHub"/>
+                </a>
+                <a href="https://www.linkedin.com/in/raphael-lambert/" target="_blank">
+                    <img src="../img/social_icons/linkedin.svg" alt="LinkedIn"/>
+                </a>
+                <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/lambertr" target="_blank">
+                    <img src="../img/social_icons/gitlab.png" alt="GitLab"/>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright Raphaël Lambert 2024 | Designed by Raphaël Lambert</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="goToTop" class="goToTop">
+    <a href="#header">
+        <img src="../img/icons/arrow_up.svg" alt="Back to top"/>
+    </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/translation.js"></script>
+</body>
+</html>

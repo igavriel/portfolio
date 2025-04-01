@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage DSIN - Raphaël Lambert</title>
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+            integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/projects.css" />
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container container-lg">
+        <div class="header-nav">
+            <a href="../index.html" class="logo">R<span>.</span>Lambert</a>
+            <nav id="nav" class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html#home" class="nav-link" data-translate="home">Home</a></li>
+                    <li class="nav-item"><a href="../index.html#about" class="nav-link" data-translate="about">About</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html#projects" class="nav-link active" data-translate="projects">Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="saectf.html" class="dropdown-item">CTFD</a></li>
+                            <li><a href="saetrains.html" class="dropdown-item">SAE - Trains </a></li>
+                            <li><a href="saebd.html" class="dropdown-item">SAE - BD Streaming Musical</a></li>
+                            <li><a href="saemagasin.html" class="dropdown-item">Plateforme E-commerce</a></li>
+                            <li><a href="saecontroverse.html" class="dropdown-item">SAE - Controverse</a></li>
+                            <li><a href="saetournoi.html" class="dropdown-item">SAE - Charlie's festival adventure</a></li>
+                            <li><a href="stagedsin.html" class="dropdown-item">Stage DSIN - SA.P.I.E.N.S</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a href="../index.html#contact" class="nav-link" data-translate="contact">Contact</a></li>
+                    <li class="nav-item">
+                        <select id="languageSelect" class="language-select">
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </li>
+                </ul>
+                <button id="nav-btn" class="nav-btn">
+                    <img id="nav-btn-img" src="../img/icons/open.svg" alt="Navigation button"/>
+                </button>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="hero" style="padding: 12rem 0 5rem;">
+    <div class="container">
+        <div class="projects-title">
+            <h2 class="title" data-translate="project_title">Stage DSIN Migration SA.P.I.E.N.S</h2>
+        </div>
+
+        <div class="about-row">
+            <!-- Navigation des sections -->
+            <div class="about-content" style="flex: 25%;">
+                <div class="section-nav">
+                    <ul>
+                        <li><a href="#contexte" data-translate="project_context">Contexte</a></li>
+                        <li><a href="#deroulement" data-translate="project_progress">Déroulement du projet</a></li>
+                        <li><a href="#defis" data-translate="technical_challenges">Défis techniques</a></li>
+                        <li><a href="#competences" data-translate="skills_acquired">Compétences acquises</a></li>
+                        <li><a href="#conclusion" data-translate="conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contenu principal -->
+            <div class="about-skills" style="flex: 75%; min-width: 0;">
+                <a href="https://gitlab.etu.umontpellier.fr/e20220005734/sap-d10" target="_blank" class="btn">
+                    <img src="../img/social_icons/gitlab.png" alt="GitLab" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+                    <span data-translate="see_on_gitlab">Voir sur GitLab</span>
+                </a>
+                <a href="https://sapiens.umontpellier.fr/" class="btn btn-white" data-translate="link_to_project">Lien vers le projet</a>
+
+                <!-- Contexte -->
+                <div id="contexte" class="project-section">
+                    <h3 data-translate="project_context">Context</h3>
+                    <p class="about-descr" data-translate="context_text">
+                        My professional immersion took place within the Direction of Information Systems and Digital Technology (DSIN) at the University of Montpellier, specifically in the Environments & Production Service (SEP) under the coordination of Mr. Frederik Guitton. This internship was positioned within a critical digital transformation dynamic for the institution: the migration of the SAPIENS system (Educational Computing Classrooms for Teaching) from its obsolescent Drupal 7 version to the modern Drupal 10 architecture.
+                    </p>
+                    <p class="about-descr" data-translate="context_text_2">
+                        SAPIENS represents much more than a simple administrative application—it stands as a cornerstone in the university's digital ecosystem, orchestrating the integrated management of digital educational resources. This platform coordinates the allocation of computer rooms, administers user services (MySQL, PostgreSQL, Oracle databases, Web services), and strategically plans digital examinations. In this institutional context, where service continuity represents an absolute imperative, the programmed obsolescence of Drupal 7 support made this migration not merely desirable but imperative for operational sustainability.
+                    </p>
+                    <p class="about-descr" data-translate="context_text_3">
+                        The challenge transcended far beyond a simple technical update: it involved a profound architectural redesign, simultaneously aiming to improve systemic maintainability, strengthen security paradigms, and optimize the user experience, while meticulously preserving compatibility with pre-existing business processes.
+                    </p>
+                </div>
+
+                <!-- Déroulement -->
+                <div id="deroulement" class="project-section">
+                    <h3 data-translate="project_progress">Project Development</h3>
+                    <p class="about-descr" data-translate="progress_text_1">
+                        The methodology deployed for this project was articulated in structuring phases, beginning with an in-depth systemic analysis of the existing architecture. This initial stage was considerably enriched by a preliminary technical audit conducted by DropTeam, which enabled me to elaborate a detailed mental mapping of functional interdependencies and identify critical nodes requiring particular attention.
+                    </p>
+                    <p class="about-descr" data-translate="progress_text_2">
+                        Establishing the development environment constituted a crucial foundational phase. I opted for the implementation of DDev, a tool specifically designed for the Drupal ecosystem, offering a containerized environment guaranteeing perfect reproducibility of development conditions, thus eliminating the traditional "it works on my machine" problems. This environmental standardization proved decisive for the quality of subsequent development.
+                    </p>
+                    <p class="about-descr" data-translate="progress_text_3">
+                        The adoption of an agile methodology, inspired by Scrum but judiciously adapted to our specific system migration context, structured the entirety of the process. In my role as Product Owner, I orchestrated the transformation of functional requirements into structured Product Backlog elements, prioritized according to their criticality, constantly negotiating the subtle balance between conceptual fidelity and technical innovation. The bi-weekly periodicity of sprints proved particularly adapted, offering the necessary latitude to develop significant increments while preserving essential agility in the face of emerging project constraints.
+                    </p>
+                    <p class="about-descr" data-translate="progress_text_4">
+                        The technical transposition began with the establishment of a hierarchical architecture faithfully representing the spatial organization of educational resources (Campus > Buildings > Rooms), notably implementing the Geofield module for cartographic visualization of resources. Modular development then deployed along several fundamental axes:
+                    </p>
+                    <ul class="about-list">
+                        <li data-translate="progress_list_1">Designing a sophisticated user services management system, replacing obsolete Field Collections with Paragraphs while maintaining the integrity of business functionalities</li>
+                        <li data-translate="progress_list_2">Implementing an entirely redesigned web spaces directory, integrating synchronization mechanisms with the university LDAP and Apogée academic data</li>
+                        <li data-translate="progress_list_3">Modernizing the examination management module, transforming the old procedural implementation into a coherent modular architecture following contemporary standards</li>
+                        <li data-translate="progress_list_4">Developing an innovative hardware warranty tracking system, offering computer correspondents centralized visibility on the state of their equipment</li>
+                    </ul>
+                    <p class="about-descr" data-translate="progress_text_5">
+                        Meticulous attention was given to exhaustive documentation of the system on WikiDSIN, elaborating detailed technical guides for each developed module and precisely documenting the architectural choices made. This dimension, often neglected in IT projects, proved fundamental to guarantee the transmissibility and sustainability of the system in the university context.
+                    </p>
+                </div>
+
+                <!-- Défis -->
+                <div id="defis" class="project-section">
+                    <h3 data-translate="technical_challenges">Technical Challenges</h3>
+                    <p class="about-descr" data-translate="challenges_text_1">
+                        The technical challenges encountered during this migration revealed the underlying complexity of a mature university information system, requiring innovative approaches to maintain functional coherence while substantially modernizing the architecture.
+                    </p>
+                    <p class="about-descr" data-translate="challenges_text_2">
+                        The fundamental transformation of the service architecture constituted a major challenge. The obsolescence of the Field Collection module in Drupal 10 necessitated a profound structural redesign using the Paragraphs system, conceptually different but offering superior flexibility. This migration involved the complete redesign of the main service management module, the true backbone of the SAPIENS system. The challenge particularly resided in the meticulous preservation of critical functionalities such as sensitive data encryption and business process automation, previously implemented via the now incompatible Rules module.
+                    </p>
+                    <p class="about-descr" data-translate="challenges_text_3">
+                        The paradigmatic evolution of Drupal 10 concerning PHP code execution in fields constituted another significant challenge. For legitimate security reasons, this possibility was removed, necessitating a complete reengineering of the dynamic calculation logic for rooms. This fundamental change led me to develop a sophisticated module implementing hooks intercepting each room save event to trigger a chain of complex operations: extraction and validation of the Ivanti query, asynchronous communication with the external API, analysis and processing of the JSON response, and automated updating of associated metadata.
+                    </p>
+                    <p class="about-descr" data-translate="challenges_text_4">
+                        Optimizing interactions with the Ivanti system, critical infrastructure for IT equipment inventory, represented a major performance challenge. The implementation of a stratified cache system constituted a significant innovation, employing different persistence levels adapted to the nature of the data. This intelligent mechanism refreshes only data that has actually changed, drastically reducing the load on external services while maintaining satisfactory information currency. Developing this caching strategy required a deep understanding of usage patterns specific to the university context.
+                    </p>
+                </div>
+
+                <!-- Compétences -->
+                <div id="competences" class="project-section">
+                    <h3 data-translate="skills_acquired">Acquired Skills</h3>
+                    <p class="about-descr" data-translate="skills_text_1">
+                        This professional immersion allowed me to develop a substantially enriched portfolio of technical and methodological skills, transcending the traditional boundaries of web development to embrace a global systemic perspective.
+                    </p>
+                    <p class="about-descr" data-translate="skills_text_2">
+                        The in-depth mastery of Drupal 10 technologies and the Symfony ecosystem constitutes a fundamental technical acquisition. Through the complete rewriting of custom modules and adaptation of hooks to the new framework, I developed an intimate understanding of Drupal's underlying data structures and architectural mechanisms. This expertise particularly manifested in the transformation of Field Collections into Paragraphs, requiring a fine comprehension of the nuances between these two data structuring paradigms.
+                    </p>
+                    <p class="about-descr" data-translate="skills_text_3">
+                        The design and implementation of stratified cache systems represents a distinctive skill particularly valuable for optimizing contemporary web applications. This experience allowed me to apprehend the subtleties of different caching strategies (temporary, persistent, differentiated) and their determining impact on the overall performance of a complex system. The implementation of an intelligent refresh mechanism that precisely discriminates data requiring updating constituted a significant technical innovation.
+                    </p>
+                    <p class="about-descr" data-translate="skills_text_4">
+                        Developing robust integration mechanisms with heterogeneous external services (Ivanti, LDAP, CAS) confronted me with the contemporary challenges of distributed architectures. This dimension of the project allowed me to acquire a systemic vision of complex informational ecosystems, particularly relevant in the university context where interoperability between historically compartmentalized systems represents a permanent challenge.
+                    </p>
+                </div>
+
+                <!-- Conclusion -->
+                <div id="conclusion" class="project-section">
+                    <h3 data-translate="conclusion">Conclusion</h3>
+                    <p class="about-descr" data-translate="conclusion_text_1">
+                        This migration project culminated in the implementation of a modern, secure, and high-performance architecture, strategically preparing SAPIENS for future evolutions while guaranteeing the operational continuity indispensable for the university community. The initial objectives were not only achieved but often exceeded, with the implementation of improvement functionalities responding to emerging needs identified during the project.
+                    </p>
+                    <p class="about-descr" data-translate="conclusion_text_2">
+                        The adoption of Drupal 10 standards and the rigorous implementation of development best practices guarantee the long-term maintainability of this critical application. The new modular architecture will considerably facilitate the integration of future functionalities, while the implemented optimization mechanisms will efficiently absorb the anticipated growth of needs.
+                    </p>
+                    <p class="about-descr" data-translate="conclusion_text_3">
+                        Beyond technical achievements, this experience profoundly confirmed my affinity for complex projects requiring a holistic understanding of issues and a methodical resolution approach. The intellectual satisfaction of transforming a critical system, simultaneously making it more robust, more performant, and more evolutive, while meticulously preserving its compatibility with the existing ecosystem, constitutes a particularly enriching and formative professional experience.
+                    </p>
+                    <p class="about-descr" data-translate="conclusion_text_4">
+                        The skills developed during this internship transcend the specific technical framework of Drupal to embrace universal dimensions of complex information system development: modular architecture, performance optimization, integration of heterogeneous systems, and exhaustive documentation. This experience thus constitutes a solid foundation for confidently approaching large-scale projects, equipping me with the essential technical and methodological skills to effectively contribute to the digital transformation of organizations.
+                    </p>
+                </div>
+                <div class="about-download-btn">
+                    <a href="../img/Q4-LAMBERT-Rapport-Stage.pdf" class="btn btn-white" data-translate="download_rapport">Download Rapport</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation entre projets -->
+        <div style="display: flex; justify-content: space-between; margin-top: 6rem;">
+            <a href="saetournoi.html" class="btn btn-white" data-translate="previous_project">← Projet Précédent</a>
+            <a href="saectf.html" class="btn btn-white" data-translate="next_project">Projet Suivant →</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="social-links-row footer-social">
+                <a href="https://github.com/Raphlbrt" target="_blank">
+                    <img src="../img/social_icons/github.svg" alt="GitHub"/>
+                </a>
+                <a href="https://www.linkedin.com/in/raphael-lambert/" target="_blank">
+                    <img src="../img/social_icons/linkedin.svg" alt="LinkedIn"/>
+                </a>
+                <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/lambertr" target="_blank">
+                    <img src="../img/social_icons/gitlab.png" alt="GitLab"/>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright Raphaël Lambert 2024 | Designed by Raphaël Lambert</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="goToTop" class="goToTop">
+    <a href="#header">
+        <img src="../img/icons/arrow_up.svg" alt="Back to top"/>
+    </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/translationdsin.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Trains - Raphaël Lambert</title>
+  <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/media.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+          integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../css/projects.css" />
+</head>
+<body>
+<header id="header" class="header">
+  <div class="container container-lg">
+    <div class="header-nav">
+      <a href="../index.html" class="logo">R<span>.</span>Lambert</a>
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html#home" class="nav-link" data-translate="home">Home</a></li>
+          <li class="nav-item"><a href="../index.html#about" class="nav-link" data-translate="about">About</a></li>
+          <li class="nav-item">
+            <a href="../index.html#projects" class="nav-link active" data-translate="projects">Projects</a>
+            <ul class="dropdown">
+              <li><a href="saectf.html" class="dropdown-item">CTFD</a></li>
+              <li><a href="saetrains.html" class="dropdown-item">SAE - Trains </a></li>
+              <li><a href="saebd.html" class="dropdown-item">SAE - BD Streaming Musical</a></li>
+              <li><a href="saemagasin.html" class="dropdown-item">Plateforme E-commerce</a></li>
+              <li><a href="saecontroverse.html" class="dropdown-item">SAE - Controverse</a></li>
+              <li><a href="saetournoi.html" class="dropdown-item">SAE - Charlie's festival adventure</a></li>
+              <li><a href="stagedsin.html" class="dropdown-item">Stage DSIN - SA.P.I.E.N.S</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a href="../index.html#contact" class="nav-link" data-translate="contact">Contact</a></li>
+          <li class="nav-item">
+            <select id="languageSelect" class="language-select">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+            </select>
+          </li>
+        </ul>
+        <button id="nav-btn" class="nav-btn">
+          <img id="nav-btn-img" src="../img/icons/open.svg" alt="Navigation button"/>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding: 12rem 0 5rem;">
+  <div class="container">
+    <div class="projects-title">
+      <h2 class="title" data-translate="project_ecommerce">Développement d'une Plateforme E-commerce</h2>
+    </div>
+
+    <div class="about-row">
+      <!-- Navigation des sections -->
+      <div class="about-content" style="flex: 25%;">
+        <div class="section-nav">
+          <ul>
+            <li><a href="#contexte" data-translate="project_context">Contexte</a></li>
+            <li><a href="#deroulement" data-translate="project_progress">Déroulement du projet</a></li>
+            <li><a href="#defis" data-translate="technical_challenges">Défis techniques</a></li>
+            <li><a href="#competences" data-translate="skills_acquired">Compétences acquises</a></li>
+            <li><a href="#conclusion" data-translate="conclusion">Conclusion</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="about-skills" style="flex: 75%; min-width: 0;">
+        <a href="https://github.com/Raphlbrt/Project-e-commerce" target="_blank" class="btn">
+          <img src="../img/social_icons/github.svg" alt="GitHub" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+          <span data-translate="see_on_gitlab">Voir sur GitHub</span>
+        </a>
+        <a href="https://webinfo.iutmontp.univ-montp2.fr/~lambertr/projetphp/web/controleurFrontal.php" class="btn btn-white" data-translate="link_to_project">Lien vers le projet</a>
+        <!-- Contexte -->
+        <div id="contexte" class="project-section">
+          <h3 data-translate="project_context">Contexte</h3>
+          <p class="about-descr" data-translate="context_text_p1">
+            Dans le cadre de mon parcours en développement web, j'ai participé à la création complète d'une plateforme e-commerce en PHP. Ce projet ambitieux a nécessité une approche méthodique et une collaboration étroite entre les membres de l'équipe, mettant en pratique les concepts fondamentaux du développement web moderne.
+          </p>
+        </div>
+
+        <!-- Déroulement -->
+        <div id="deroulement" class="project-section">
+          <h3 data-translate="project_progress">Déroulement du Projet</h3>
+          <div class="about-descr">
+            <h4 data-translate="architecture_title">Architecture et Structure</h4>
+            <ul class="challenge-list">
+              <li data-translate="architecture_1">Implémentation rigoureuse du pattern MVC</li>
+              <li data-translate="architecture_2">Mise en place d'une base de données relationnelle optimisée</li>
+              <li data-translate="architecture_3">Développement d'une architecture modulaire et évolutive</li>
+              <li data-translate="architecture_4">Déploiement sur l'infrastructure webinfo de l'IUT</li>
+            </ul>
+
+            <h4 data-translate="features_title">Fonctionnalités Principales</h4>
+            <ul class="challenge-list">
+              <li data-translate="features_1">Gestion complète des produits et catégories</li>
+              <li data-translate="features_2">Système d'authentification robuste</li>
+              <li data-translate="features_3">Gestion avancée du panier d'achat</li>
+              <li data-translate="features_4">Interface administrateur complète</li>
+              <li data-translate="features_5">Système de filtrage et de tri des produits</li>
+              <li data-translate="features_6">Historique des commandes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Défis -->
+        <div id="defis" class="project-section">
+          <h3 data-translate="technical_challenges">Défis Techniques</h3>
+          <p class="about-descr" data-translate="challenges_intro">
+            En tant que développeur principal de plusieurs fonctionnalités critiques, j'ai relevé de nombreux défis techniques :
+          </p>
+          <ul class="challenge-list">
+            <li data-translate="challenges_1">Implémentation d'un système de gestion de panier sophistiqué avec gestion dynamique des quantités</li>
+            <li data-translate="challenges_2">Développement d'un système de messages flash pour une meilleure expérience utilisateur</li>
+            <li data-translate="challenges_3">Création d'un système de connexion sécurisé avec protection contre les attaques par force brute</li>
+            <li data-translate="challenges_4">Mise en place d'une gestion des fournisseurs avec relation complexe ville-fournisseur</li>
+            <li data-translate="challenges_5">Conception d'une interface responsive et ergonomique</li>
+            <li data-translate="challenges_6">Développement d'un système d'inscription utilisateur avec validation d'email</li>
+          </ul>
+        </div>
+
+        <!-- Compétences -->
+        <div id="competences" class="project-section">
+          <h3 data-translate="skills_acquired">Compétences Acquises</h3>
+          <ul class="challenge-list">
+            <li data-translate="skills_1">Maîtrise approfondie de PHP et MySQL</li>
+            <li data-translate="skills_2">Expertise en développement MVC</li>
+            <li data-translate="skills_3">Compétences avancées en sécurité web</li>
+            <li data-translate="skills_4">Gestion de projet avec Git</li>
+            <li data-translate="skills_5">Design responsive et UX/UI</li>
+            <li data-translate="skills_6">Travail collaboratif et gestion de versions</li>
+          </ul>
+        </div>
+
+        <!-- Conclusion -->
+        <div id="conclusion" class="project-section">
+          <h3 data-translate="conclusion">Conclusion</h3>
+          <p class="about-descr" data-translate="conclusion_text">
+            Ce projet e-commerce a constitué une expérience d'apprentissage exceptionnellement enrichissante dans le domaine du développement web. La complexité des fonctionnalités implémentées et la nécessité de maintenir une architecture propre et évolutive ont permis de développer une compréhension approfondie des enjeux du développement web moderne. La dimension collaborative du projet, notamment à travers la gestion de versions avec Git et la coordination entre les différentes parties du système, a renforcé ma capacité à travailler efficacement en équipe et à maintenir un code de qualité.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation entre projets -->
+    <div style="display: flex; justify-content: space-between; margin-top: 6rem;">
+      <a href="saebd.html" class="btn btn-white" data-translate="previous_project">← Projet Précédent</a>
+      <a href="saecontroverse.html" class="btn btn-white" data-translate="next_project">Projet Suivant →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="social-links-row footer-social">
+        <a href="https://github.com/Raphlbrt" target="_blank">
+          <img src="../img/social_icons/github.svg" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/raphael-lambert/" target="_blank">
+          <img src="../img/social_icons/linkedin.svg" alt="LinkedIn"/>
+        </a>
+        <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/lambertr" target="_blank">
+          <img src="../img/social_icons/gitlab.png" alt="GitLab"/>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Copyright Raphaël Lambert 2024 | Designed by Raphaël Lambert</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="goToTop" class="goToTop">
+  <a href="#header">
+    <img src="../img/icons/arrow_up.svg" alt="Back to top"/>
+  </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/translationmagasin.js"></script>
+</body>
+</html>

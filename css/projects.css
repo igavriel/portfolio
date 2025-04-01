@@ -1,0 +1,38 @@
+.project-section {
+    margin-bottom: 6rem;
+}
+.project-section h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-accent);
+}
+.section-nav {
+    position: sticky;
+    top: 100px;
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.section-nav ul {
+    list-style: none;
+}
+.section-nav li {
+    margin-bottom: 1rem;
+}
+.section-nav li a {
+    color: var(--gray-text-color);
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+.section-nav a:hover {
+    color: var(--secondary-accent);
+}
+.challenge-list {
+    margin-left: 2rem;
+}
+.challenge-list li {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--gray-text-color);
+}

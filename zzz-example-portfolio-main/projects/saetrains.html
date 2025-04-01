@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Trains - Raphaël Lambert</title>
+  <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/media.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+          integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../css/projects.css" />
+</head>
+<body>
+<header id="header" class="header">
+  <div class="container container-lg">
+    <div class="header-nav">
+      <a href="../index.html" class="logo">R<span>.</span>Lambert</a>
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html#home" class="nav-link" data-translate="home">Home</a></li>
+          <li class="nav-item"><a href="../index.html#about" class="nav-link" data-translate="about">About</a></li>
+          <li class="nav-item">
+            <a href="../index.html#projects" class="nav-link active" data-translate="projects">Projects</a>
+            <ul class="dropdown">
+              <li><a href="saectf.html" class="dropdown-item">CTFD</a></li>
+              <li><a href="saetrains.html" class="dropdown-item">SAE - Trains </a></li>
+              <li><a href="saebd.html" class="dropdown-item">SAE - BD Streaming Musical</a></li>
+              <li><a href="saemagasin.html" class="dropdown-item">Plateforme E-commerce</a></li>
+              <li><a href="saecontroverse.html" class="dropdown-item">SAE - Controverse</a></li>
+              <li><a href="saetournoi.html" class="dropdown-item">SAE - Charlie's festival adventure</a></li>
+              <li><a href="stagedsin.html" class="dropdown-item">Stage DSIN - SA.P.I.E.N.S</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a href="../index.html#contact" class="nav-link" data-translate="contact">Contact</a></li>
+          <li class="nav-item">
+            <select id="languageSelect" class="language-select">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+            </select>
+          </li>
+        </ul>
+        <button id="nav-btn" class="nav-btn">
+          <img id="nav-btn-img" src="../img/icons/open.svg" alt="Navigation button"/>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding: 12rem 0 5rem;">
+  <div class="container">
+    <div class="projects-title">
+      <h2 class="title" data-translate="project_trains">Développement du Jeu "Trains"</h2>
+    </div>
+
+    <div class="about-row">
+      <!-- Navigation des sections -->
+      <div class="about-content" style="flex: 25%;">
+        <div class="section-nav">
+          <ul>
+            <li><a href="#contexte" data-translate="project_context">Contexte</a></li>
+            <li><a href="#deroulement" data-translate="project_progress">Déroulement du projet</a></li>
+            <li><a href="#defis" data-translate="technical_challenges">Défis techniques</a></li>
+            <li><a href="#competences" data-translate="skills_acquired">Compétences acquises</a></li>
+            <li><a href="#conclusion" data-translate="conclusion">Conclusion</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="about-skills" style="flex: 75%; min-width: 0;">
+        <!-- Contexte -->
+        <div id="contexte" class="project-section">
+          <h3 data-translate="project_context">Contexte</h3>
+          <p class="about-descr" data-translate="context_trains_text">
+            Dans le cadre de mon BUT Informatique, j'ai eu l'opportunité fascinante de participer au développement d'une implémentation complète du jeu de société japonais "Trains". Ce projet ambitieux s'est déroulé en trois phases distinctes, chacune mobilisant des compétences spécifiques et complémentaires.
+          </p>
+        </div>
+
+        <!-- Déroulement -->
+        <div id="deroulement" class="project-section">
+          <h3 data-translate="project_phases">Phases du Projet</h3>
+          <h4 data-translate="phase_1_title">Phase 1 : Développement de la Mécanique du Jeu</h4>
+          <a href="https://github.com/Raphlbrt/Trains-back" target="_blank" class="btn">
+            <img src="../img/social_icons/github.svg" alt="GitHub" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+            <span data-translate="see_on_gitlab">Voir sur GitHub</span>
+          </a>
+          <p class="about-descr" data-translate="phase_1_text">
+            Implémentation complète de la logique métier en Java, création du système de gestion des cartes et des actions joueur, mise en place des règles de jeu et des contraintes, développement du moteur de jeu et des interactions.
+          </p>
+
+          <h4 data-translate="phase_2_title">Phase 2 : Algorithmes de Graphes</h4>
+          <a href="https://github.com/Raphlbrt/Trains-graphe" target="_blank" class="btn">
+            <img src="../img/social_icons/github.svg" alt="GitHub" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+            <span data-translate="see_on_gitlab">Voir sur GitHub</span>
+          </a>
+          <p class="about-descr" data-translate="phase_2_text">
+            Implémentation d'algorithmes complexes pour le calcul des chemins optimaux, la gestion des connexions ferroviaires, et l'analyse des coûts de construction. Utilisation approfondie des structures de données adaptées et optimisation des performances algorithmiques.
+          </p>
+
+          <h4 data-translate="phase_3_title">Phase 3 : Interface Graphique JavaFX</h4>
+          <a href="https://github.com/Raphlbrt/Trains-IHM" target="_blank" class="btn">
+            <img src="../img/social_icons/github.svg" alt="GitHub" style="height: 20px; width: 20px; filter: invert(1); margin-right: 10px; vertical-align: middle;">
+            <span data-translate="see_on_gitlab">Voir sur GitHub</span>
+          </a>
+          <p class="about-descr" data-translate="phase_3_text">
+            Conception d'une interface utilisateur intuitive et responsive, implémentation de composants graphiques personnalisés, gestion des événements et des interactions utilisateur, intégration harmonieuse avec la logique métier.
+          </p>
+        </div>
+
+        <!-- Défis -->
+        <div id="defis" class="project-section">
+          <h3 data-translate="technical_challenges">Défis Techniques</h3>
+          <p class="about-descr" data-translate="challenges_text">
+            Les challenges rencontrés ont été nombreux et stimulants : conception orientée objet robuste et évolutive, gestion complexe des états de jeu et des transitions, implémentation d'algorithmes de graphes sophistiqués, développement d'une interface graphique ergonomique et réactive, intégration des différentes couches applicatives, tests unitaires exhaustifs et gestion de qualité.
+          </p>
+        </div>
+
+        <!-- Compétences -->
+        <div id="competences" class="project-section">
+          <h3 data-translate="skills_acquired">Compétences Acquises</h3>
+          <p class="about-descr" data-translate="skills_text">
+            Ce projet m'a permis de développer un large éventail de compétences : maîtrise approfondie de Java et des principes POO, expertise en algorithmique et structures de données, compétences avancées en JavaFX et développement GUI, méthodologie de tests et assurance qualité, gestion de version avec Git, travail collaboratif et communication technique.
+          </p>
+        </div>
+
+        <!-- Conclusion -->
+        <div id="conclusion" class="project-section">
+          <h3 data-translate="conclusion">Conclusion</h3>
+          <p class="about-descr" data-translate="conclusion_text">
+            Ce projet a constitué une expérience d'apprentissage exceptionnellement riche, combinant aspects théoriques et pratiques. La réalisation d'une application complète, de la logique métier à l'interface utilisateur, en passant par les algorithmes de graphes, m'a permis de développer une vision holistique du développement logiciel. Cette expérience a significativement renforcé ma capacité à concevoir et implémenter des solutions logicielles complexes et m'a donné une excellente préparation pour mes futurs défis professionnels.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation entre projets -->
+    <div style="display: flex; justify-content: space-between; margin-top: 6rem;">
+      <a href="saetournoi.html" class="btn btn-white" data-translate="previous_project">← Projet Précédent</a>
+      <a href="saectf.html" class="btn btn-white" data-translate="next_project">Projet Suivant →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="social-links-row footer-social">
+        <a href="https://github.com/Raphlbrt" target="_blank">
+          <img src="../img/social_icons/github.svg" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/raphael-lambert/" target="_blank">
+          <img src="../img/social_icons/linkedin.svg" alt="LinkedIn"/>
+        </a>
+        <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/lambertr" target="_blank">
+          <img src="../img/social_icons/gitlab.png" alt="GitLab"/>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Copyright Raphaël Lambert 2024 | Designed by Raphaël Lambert</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="goToTop" class="goToTop">
+  <a href="#header">
+    <img src="../img/icons/arrow_up.svg" alt="Back to top"/>
+  </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/translationtrains.js"></script>
+</body>
+</html>
