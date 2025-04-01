@@ -2,12 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary-bg-color: #3d3e3f;
-  --primary-accent: #1f2a50;
+  --primary-bg-color: #1e242b;
+  --secondary-bg-color: #10181f;
+
+  --primary-accent: #323f75;
   --secondary-accent: #5fb5e7;
 
-  --main-text-color: #92acb1;
-  --supportive-text-color: #242d2f;
+  --main-text-color: #558c97;
+  --supportive-text-color: #c7e8f0;
   --gray-text-color: #565a5b;
 
   --white-color: #fff;
@@ -15,8 +17,8 @@
   --gray-color-2: #c0c0c0;
   --gray-color-3: #e6e6e6;
 
-  --color-preloader-bg: var(--white-color);
-  --color-dots: #1a1a1a;
+  --color-preloader-bg: var(--primary-bg-color);
+  --color-dots: var(--secondary-accent);
 }
 
 /* Common styles */
@@ -156,7 +158,7 @@ h5 {
   left: 0;
   width: 100%;
   z-index: 1999;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--primary-bg-color);
   padding-top: 0;
   padding-bottom: 0;
   transition: all 0.3s ease-in-out;
@@ -276,6 +278,7 @@ h5 {
 /* About section */
 .about {
   padding: 7rem 0;
+  background-color: var(--secondary-bg-color);
 }
 
 .about-row {
