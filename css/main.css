@@ -301,6 +301,18 @@ h5 {
   position: relative;
 }
 
+.about-list li {
+  list-style-position: inside;
+  list-style-type: square;
+  text-align: left;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-list a {
+  color: var(--secondary-accent);
+}
+
 .about-social-list {
   display: flex;
 }
