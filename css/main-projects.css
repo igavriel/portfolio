@@ -309,7 +309,7 @@ h5 {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--gray-text-color);
+  color: var(--supportive-text-color);
 }
 
 .about-content {
