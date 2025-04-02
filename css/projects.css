@@ -9,7 +9,7 @@
 .section-nav {
     position: sticky;
     top: 100px;
-    background: var(--white-color);
+    background-color: var(--secondary-bg-color);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -21,8 +21,8 @@
     margin-bottom: 1rem;
 }
 .section-nav li a {
-    color: var(--gray-text-color);
-    font-size: 1.4rem;
+    color: var(--supportive-text-color);
+    font-size: 1.0rem;
     transition: all 0.3s ease;
 }
 .section-nav a:hover {
@@ -33,6 +33,6 @@
 }
 .challenge-list li {
     margin-bottom: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--gray-text-color);
+    font-size: 1.0rem;
+    color: var(--supportive-text-color);
 }

@@ -14,16 +14,27 @@ document.addEventListener("DOMContentLoaded", () => {
   //Hamburger menu
   navBtn.onclick = () => {
     if (nav.classList.toggle("open")) {
-      navBtnImg.src = "img/icons/close.svg";
+      navBtnImg.src = window.location.pathname.includes("projects/")
+        ? "../img/icons/close.svg"
+        : "img/icons/close.svg";
     } else {
-      navBtnImg.src = "img/icons/open.svg";
+      navBtnImg.src = window.location.pathname.includes("projects/")
+        ? "../img/icons/open.svg"
+        : "img/icons/open.svg";
     }
   };
 
   window.addEventListener("scroll", function () {
     const header = document.querySelector("#header");
     const hero = document.querySelector("#home");
-    let triggerHeight = hero.offsetHeight - 170;
+    let triggerHeight = 0;
+    if(hero)
+    {
+      console.log("hero.offsetHeight: ", hero.offsetHeight);
+      triggerHeight = hero.offsetHeight - 170;
+    } else {
+      triggerHeight = 170;
+    }
 
     if (window.scrollY > triggerHeight) {
       header.classList.add("header-sticky");
