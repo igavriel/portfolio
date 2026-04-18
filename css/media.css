@@ -46,8 +46,8 @@
     font-size: 1.8rem;
   }
 
-  .project-box {
-    max-width: 45.4rem;
+  .project-card {
+    width: min(100%, 45.4rem);
   }
 
   .about,
@@ -170,8 +170,8 @@
     height: 4rem;
   }
 
-  .project-box {
-    max-width: 32.7rem;
+  .project-card {
+    width: min(100%, 32.7rem);
   }
 
   .about,
@@ -224,8 +224,8 @@
     max-width: 100%;
   }
 
-  .project-box {
-    max-width: 100%;
+  .project-card {
+    width: 100%;
   }
 
   .footer-copyright p {

@@ -17,6 +17,12 @@
   --gray-color: #e9e8e8;
   --gray-color-2: #c0c0c0;
   --gray-color-3: #e6e6e6;
+  --tv-bezel-top: #5c5c5c;
+  --tv-bezel-mid: #2e2e2e;
+  --tv-bezel-bottom: #1a1a1a;
+  --tv-screen-matte: #0a0a0a;
+  --tv-stand: #252525;
+  --tv-stand-foot: #1c1c1c;
 
   --color-preloader-bg: var(--primary-bg-color);
   --color-dots: var(--secondary-accent);
@@ -451,81 +457,139 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
 }
 
-.project-box {
-  position: relative;
-  overflow: hidden;
+.project-card {
+  width: min(100%, 340px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card__link {
   display: block;
-  max-width: 510px;
-}
-
-.project-box a {
-  display: inline-block;
-}
-
-.project-box:hover .project-mask {
-  opacity: 1;
-  visibility: visible;
-}
-
-.project-box:hover .project-mask .project-caption {
-  bottom: 30px;
-  opacity: 1;
-}
-
-.project-box:hover .project-img {
-  transform: scale(1.1);
-  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
   width: 100%;
+  text-decoration: none;
+}
+
+.project-card__caption {
+  margin-top: 0.9rem;
+  text-align: center;
+}
+
+.project-card__caption h5 {
+  margin-bottom: 0.25rem;
+  color: var(--white-color);
+}
+
+.project-card__caption p {
+  margin: 0;
+  color: var(--gray-color-2);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+/* Project cards: retro TV (bezel + screen + stand) */
+.project-tv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-tv__bezel {
+  position: relative;
+  width: 100%;
+  padding: 0.65rem 0.75rem 1.1rem;
+  border-radius: 0.65rem;
+  background: linear-gradient(
+    165deg,
+    var(--tv-bezel-top) 0%,
+    var(--tv-bezel-mid) 42%,
+    var(--tv-bezel-bottom) 100%
+  );
+  box-shadow:
+    0 0.35rem 0.75rem rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.project-tv__bezel::after {
+  content: "";
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.85rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #8ef5b4, #1e7a45);
+  box-shadow: 0 0 0.4rem rgba(46, 204, 113, 0.65);
+}
+
+.project-tv__screen {
+  position: relative;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  background: var(--tv-screen-matte);
+  box-shadow:
+    inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+    inset 0 0 0 3px rgba(255, 255, 255, 0.08),
+    inset 0 0 1.5rem rgba(0, 0, 0, 0.55);
+}
+
+.project-tv__screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0.22;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 2px,
+    rgba(0, 0, 0, 0.12) 2px,
+    rgba(0, 0, 0, 0.12) 3px
+  );
 }
 
 .project-img {
-  transform: scale(1);
   width: 100%;
-  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  display: block;
+  height: auto;
+  transition: transform 300ms ease;
 }
 
-.project-mask {
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-  height: 100%;
-  position: absolute;
-  transition: all 0.5s ease-in-out 0s;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
+.project-card:hover .project-img {
+  transform: scale(1.05);
 }
 
-.project-mask p {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  margin-top: 0;
-  text-align: left;
+.project-tv__stand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.15rem;
 }
 
-.project-mask .project-caption {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: left;
-  transition: all 0.5s ease-in-out 0s;
-  opacity: 0;
+.project-tv__stand-neck {
+  width: 32%;
+  height: 0.5rem;
+  background: linear-gradient(180deg, var(--tv-stand), var(--tv-bezel-bottom));
+  border-radius: 0 0 0.15rem 0.15rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.35);
 }
 
-.project-mask p {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  margin-top: 0;
-  text-align: left;
+.project-tv__stand-foot {
+  width: 52%;
+  height: 0.42rem;
+  margin-top: -1px;
+  background: linear-gradient(180deg, var(--tv-stand), var(--tv-stand-foot));
+  border-radius: 0 0 0.35rem 0.35rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.35);
 }
 
 /* Contact */
