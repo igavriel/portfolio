@@ -1,0 +1,75 @@
+export const projectsCatalog = [
+  {
+    sectionId: "games",
+    items: [
+      {
+        title: "Shadows of the Nexus",
+        category: "Game Design",
+        href: "./projects/shadows-of-the-nexus.html",
+        imageSrc: "img/works/shadows-of-the-nexus.png",
+        imageAlt: "Shadows of the Nexus",
+      },
+      {
+        title: "Broken Mirror",
+        category: "Unity Game",
+        href: "https://igavriel.itch.io/broken-mirror",
+        imageSrc: "img/works/broken-mirror.png",
+        imageAlt: "Broken Mirror",
+        aosDelay: 300,
+      },
+      {
+        title: "The Last Spark",
+        category: "Unity Game",
+        href: "https://igavriel.itch.io/the-last-spark",
+        imageSrc: "img/works/the-last-spark.png",
+        imageAlt: "The Last Spark",
+        aosDelay: 300,
+      },
+      {
+        title: "FOOTBAG",
+        category: "Unity Game",
+        href: "https://igavriel.itch.io/footbag",
+        imageSrc: "img/works/footbag.png",
+        imageAlt: "FOOTBAG",
+        aosDelay: 300,
+      },
+      {
+        title: "Blazing Balloon",
+        category: "Construct3 Game",
+        href: "https://igavriel.itch.io/blazing-balloon",
+        imageSrc: "img/works/balzzing-ballon.png",
+        imageAlt: "Blazing Balloon",
+        aosDelay: 600,
+      },
+      {
+        title: "Dungeon Hopper",
+        category: "Unity Game",
+        href: "https://igavriel.itch.io/dungeon-hopper",
+        imageSrc: "img/works/dungeon-hopper.png",
+        imageAlt: "Dungeon Hopper",
+        aosDelay: 300,
+      },
+      {
+        title: "Bubble Brawl",
+        category: "Global Game Jam 2025",
+        href: "https://globalgamejam.org/games/2025/bubble-brawl-8",
+        imageSrc: "img/works/bubble-brawl.png",
+        imageAlt: "Bubble Brawl",
+        aosDelay: 300,
+      },
+    ],
+  },
+  {
+    sectionId: "general",
+    items: [
+      {
+        title: "Business Cards",
+        category: "Different tools",
+        href: "./projects/business-cards.html",
+        imageSrc: "img/works/business-card.png",
+        imageAlt: "Business Cards",
+        aosDelay: 300,
+      },
+    ],
+  },
+];

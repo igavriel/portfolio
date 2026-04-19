@@ -1,7 +1,9 @@
 "use strict";
 import skillbar from "./skillbar.js";
+import { renderProjects } from "./projects-render.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  renderProjects();
   AOS.init({
     once: true,
   });
