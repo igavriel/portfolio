@@ -1,5 +1,3 @@
-import { projectsCatalog } from "./projects-data.js";
-
 function trimText(value) {
   return value != null && String(value).trim() !== "" ? String(value).trim() : "";
 }
@@ -101,7 +99,8 @@ function renderSection(entry) {
   });
 }
 
-export function renderProjects() {
+function renderProjects() {
+  const projectsCatalog = window.projectsCatalog;
   if (!Array.isArray(projectsCatalog) || !projectsCatalog.length) {
     return;
   }
@@ -110,3 +109,5 @@ export function renderProjects() {
     renderSection(entry);
   });
 }
+
+window.renderProjects = renderProjects;

@@ -1,4 +1,4 @@
-export const projectsCatalog = [
+window.projectsCatalog = [
   {
     sectionId: "games",
     items: [

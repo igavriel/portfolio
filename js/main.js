@@ -1,13 +1,20 @@
 "use strict";
-import skillbar from "./skillbar.js";
-import { renderProjects } from "./projects-render.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderProjects();
+  if (typeof window.loadSharedFooter === "function") {
+    window.loadSharedFooter();
+  }
+
+  if (typeof window.renderProjects === "function") {
+    window.renderProjects();
+  }
+
   AOS.init({
     once: true,
   });
-  skillbar();
+  if (typeof window.skillbar === "function") {
+    window.skillbar();
+  }
 
   const nav = document.querySelector("#nav");
   const navBtn = document.querySelector("#nav-btn");

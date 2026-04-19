@@ -17,4 +17,4 @@ const skillbar = () => {
     }, 1500 / progress);
   });
 };
-export default skillbar;
+window.skillbar = skillbar;
