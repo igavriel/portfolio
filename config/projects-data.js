@@ -3,6 +3,37 @@ window.projectsCatalog = [
     sectionId: "games",
     items: [
       {
+        title: "Island of the forgotten memory",
+        category: "HTML Game",
+        href: "https://igavriel.github.io/island-of-forgotten-memory/",
+        imageSrc: "img/works/island-of-the-forgotten-memory.png",
+        imageAlt: "Island of the forgotten memory",
+      },
+      {
+        title: "Sickend",
+        category: "Global Game Jam 2026",
+        href: "https://igavriel.itch.io/sickend",
+        imageSrc: "img/works/sickend.jpeg",
+        imageAlt: "Sickend",
+        aosDelay: 300,
+      },
+      {
+        title: "Crazy Coral",
+        category: "Crazylabs Game Jam 2026",
+        href: "https://igavriel.itch.io/crazy-coral",
+        imageSrc: "img/works/carzy-coral.png",
+        imageAlt: "Sickend",
+        aosDelay: 300,
+      },
+      {
+        title: "Don't wake the Monster",
+        category: "Unit Game",
+        href: "https://igavriel.itch.io/dont-wake-the-monster",
+        imageSrc: "img/works/dont-wake-the-monster.png",
+        imageAlt: "Don't wake the Monster",
+        aosDelay: 300,
+      },
+      {
         title: "Shadows of the Nexus",
         category: "Game Design",
         href: "./projects/shadows-of-the-nexus.html",
@@ -55,6 +86,19 @@ window.projectsCatalog = [
         href: "https://globalgamejam.org/games/2025/bubble-brawl-8",
         imageSrc: "img/works/bubble-brawl.png",
         imageAlt: "Bubble Brawl",
+        aosDelay: 300,
+      },
+    ],
+  },
+  {
+    sectionId: "novels",
+    items: [
+      {
+        title: "Visual Novels",
+        category: "Visual Novels",
+        href: "https://igavriel.github.io/screenwriting-games/",
+        imageSrc: "img/works/visual-novels-logos.png",
+        imageAlt: "Visual Novels",
         aosDelay: 300,
       },
     ],
